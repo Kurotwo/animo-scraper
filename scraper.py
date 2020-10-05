@@ -7,13 +7,12 @@ import pandas as pd
 import time 
 
 # Specify webpage browser to use 
-PATH = "C:\Program Files (x86)\chromedriver.exe"
+PATH = "PATH TO CHROME WEBDRIVER"
 driver = webdriver.Chrome(executable_path=PATH) 
 # Specify page url 
-# driver.get("https://enroll.dlsu.edu.ph/dlsu/view_actual_count")
-driver.get("http://enroll.dlsu.edu.ph/dlsu/view_actual_count?__cf_chl_jschl_tk__=9fa7dba2172ad594812fe77e4878de65bb395ad6-1600226317-0-ASZO5sIX1IJQ3mOnmxNBfP7rbB8Uad4EfSkGJuUKyN4Lur32_mhzK-TBExC83duqH3oDAERYMxWL98M-PInlgJgOnT8CgHAGZpSbuglz2AihkV8qi1NKaqstjdA2OWmYxeGyxS7ahbm0qlAmRWLW5CWgQ9ykznWwzDhyujtPQsBumV-MNorZCsbvgKwhGQv2AtbZKB-tvA3XQE-RcYByqcf5eAbSt9Pvdfw4RmqRc315gMuanI0M9mU8AxPoRysF9WZT4HQYwLpYeqYsF7ruOGocZFpkCVwRTORYm5FXlL5T")
+driver.get("https://enroll.dlsu.edu.ph/dlsu/view_actual_count")
 # Specify course codes 
-course_codes = ["STSWENG", "STADVDB", "CSARCH2", "LBYARCH", "STHCIUX", "DATA100", "GEWORLD"]
+course_codes = ["COURSE1", "COURSE2"]
 try:
     #Save the course tables into master table 
     table_df = []
